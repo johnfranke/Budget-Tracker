@@ -14,14 +14,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds235947.
   useNewUrlParser: true
 });
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/mongoheadlines",
-  {
-    useNewUrlParser: true,
-    useFindAndModify: false
-  }
-);
-
 // Routes
 app.use(require("./routes/api.js"));
 
